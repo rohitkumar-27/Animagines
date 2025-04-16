@@ -146,7 +146,7 @@ const Projects = () => {
                     preload="auto"
                   >
                     <source
-                      src="/public/Talkinghead Interview.mp4"
+                      src="Talkinghead Interview.mp4"
                       type="video/mp4"
                     />
                   </video>
