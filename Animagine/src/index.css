@@ -1,0 +1,218 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Unbounded:wght@200..900&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --background: 0 0% 0%;
+    --foreground: 0 0% 100%;
+
+    --card: 0 0% 4%;
+    --card-foreground: 0 0% 100%;
+
+    --popover: 0 0% 4%;
+    --popover-foreground: 0 0% 100%;
+
+    --primary: 263 76% 75%;
+    --primary-foreground: 0 0% 100%;
+
+    --secondary: 0 0% 9%;
+    --secondary-foreground: 0 0% 100%;
+
+    --muted: 0 0% 15%;
+    --muted-foreground: 0 0% 70%;
+
+    --accent: 48 95% 91%;
+    --accent-foreground: 0 0% 9%;
+
+    --destructive: 0 82% 57%;
+    --destructive-foreground: 0 0% 100%;
+
+    --border: 0 0% 20%;
+    --input: 0 0% 20%;
+    --ring: 263 76% 75%;
+
+    --radius: 0.75rem;
+  }
+
+  * {
+    @apply border-border;
+  }
+
+  html {
+    @apply scroll-smooth;
+  }
+
+  body {
+    @apply bg-background text-foreground font-sans;
+    font-family: "Unbounded", sans-serif;
+    background-color: #000;
+    color: #fff;
+  }
+
+  h1, h2, h3, h4, h5, h6 {
+    @apply  font-semibold;
+    font-family: "Unbounded", sans-serif;
+  }
+}
+
+@layer components {
+  .hero-gradient {
+    @apply bg-gradient-to-br from-motion-black via-motion-black-light to-motion-purple-dark;
+  }
+  
+  .card-hover {
+    @apply transition-all duration-300 hover:shadow-[0_10px_30px_rgba(155,135,245,0.2)] hover:-translate-y-1;
+  }
+  
+  .nav-link {
+    @apply relative text-white opacity-80 hover:opacity-100 transition-opacity duration-200 after:absolute after:bottom-0 after:left-0 after:w-0 after:h-0.5 after:bg-motion-purple after:transition-all after:duration-300 hover:after:w-full;
+  }
+  
+  .nav-link.active {
+    @apply opacity-100 after:w-full;
+  }
+  
+  .purple-glow {
+    @apply shadow-[0_0_20px_rgba(155,135,245,0.4)];
+  }
+  
+  .text-gradient {
+    @apply bg-gradient-to-r from-motion-purple to-motion-purple-light text-transparent bg-clip-text;
+  }
+
+  .animate-in-bottom {
+    @apply opacity-0 translate-y-4;
+    animation: fadeInUp 0.8s ease-out forwards;
+  }
+
+  .animate-in-left {
+    @apply opacity-0 -translate-x-4;
+    animation: fadeInLeft 0.8s ease-out forwards;
+  }
+
+  .animate-in-right {
+    @apply opacity-0 translate-x-4;
+    animation: fadeInRight 0.8s ease-out forwards;
+  }
+
+  .animate-delay-100 {
+    animation-delay: 100ms;
+  }
+
+  .animate-delay-200 {
+    animation-delay: 200ms;
+  }
+
+  .animate-delay-300 {
+    animation-delay: 300ms;
+  }
+
+  .animate-delay-400 {
+    animation-delay: 400ms;
+  }
+
+  .animate-delay-500 {
+    animation-delay: 500ms;
+  }
+
+  .purple-yellow-gradient {
+    @apply bg-gradient-to-r from-motion-purple to-motion-yellow;
+  }
+
+  .red-purple-gradient {
+    @apply bg-gradient-to-r from-motion-red to-motion-purple;
+  }
+  
+  .grid-dots {
+    background-size: 30px 30px;
+    background-image: 
+      radial-gradient(circle, rgba(155, 135, 245, 0.2) 1px, transparent 1px);
+    width: 100%;
+    height: 100%;
+    pointer-events: none;
+  }
+  
+  .backdrop-blur-card {
+    @apply backdrop-blur-lg bg-white/5 border border-white/10 shadow-lg;
+  }
+  
+  .glass-card {
+    @apply bg-gradient-to-br from-white/10 to-white/5 backdrop-blur-md border border-white/20 shadow-xl;
+  }
+  
+  .apple-card {
+    @apply bg-gradient-to-br from-black/80 to-gray-900/80 backdrop-blur-xl border border-gray-800 shadow-xl;
+  }
+}
+
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes fadeInLeft {
+  from {
+    opacity: 0;
+    transform: translateX(-30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@keyframes fadeInRight {
+  from {
+    opacity: 0;
+    transform: translateX(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+/* Advanced hover effects */
+.hover-translate-up {
+  transition: transform 0.5s cubic-bezier(0.19, 1, 0.22, 1);
+}
+
+.hover-translate-up:hover {
+  transform: translateY(-10px);
+}
+
+.hover-scale {
+  transition: transform 0.5s cubic-bezier(0.19, 1, 0.22, 1);
+}
+
+.hover-scale:hover {
+  transform: scale(1.05);
+}
+
+.text-shadow {
+  text-shadow: 0 2px 10px rgba(0, 0, 0, 0.5);
+}
+
+/* Glossy Button Effect */
+.glossy-button {
+  background: linear-gradient(135deg, rgba(255, 255, 255, 0.2) 0%, rgba(255, 255, 255, 0.05) 100%);
+  backdrop-filter: blur(10px);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.2);
+  transition: all 0.3s ease;
+}
+
+.glossy-button:hover {
+  box-shadow: 0 8px 32px rgba(155, 135, 245, 0.3);
+  border: 1px solid rgba(255, 255, 255, 0.3);
+}
