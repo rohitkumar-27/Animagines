@@ -82,7 +82,7 @@ const Index = () => {
                 subtitle="Crafting visual excellence through innovation"
                 className="text-left mb-8"
               />
-              <p className="text-gray-400 mb-6">
+              <p className="text-gray-400 mb-6 text-justify">
                 At AnImagines, we bring your imagination to life. We’re a
                 full-service video editing agency dedicated to helping brands,
                 creators, and businesses bring their vision to life through
@@ -93,7 +93,7 @@ const Index = () => {
                 designers, and graphic designers we bring your imagination to
                 life.
               </p>
-              <p className="text-gray-400 mb-8">
+              <p className="text-gray-400 mb-8 text-justify">
                 Whether you're looking to boost engagement, showcase a product,
                 or tell your brand’s story, we’re here to make sure your message
                 is clear, compelling, and professionally delivered. At our core,
@@ -102,11 +102,6 @@ const Index = () => {
                 connection. That’s what we do best. Let’s create something that
                 moves people because Everything Starts With An Imagination.
               </p>
-              <Button asChild className="bg-motion-red hover:bg-motion-red/90">
-                <Link to="/about">
-                  Learn More <ArrowRight className="ml-2" size={16} />
-                </Link>
-              </Button>
             </div>
 
             <div className="relative animate-in-right w-9/12 flex justify-center md:justify-end">

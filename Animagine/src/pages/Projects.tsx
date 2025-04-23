@@ -59,15 +59,15 @@ const Projects = () => {
       <section className="pt-32 pb-20 hero bg-black text-white">
         <div className="container mx-auto px-4">
           <div className="max-w-3xl mx-auto text-center">
-            <h1 className="text-4xl md:text-5xl font-bold mb-6">Our Projects</h1>
+            <h1 className="text-4xl md:text-5xl font-bold mb-6">
+              Our Projects
+            </h1>
             <p className="text-xl opacity-80 mb-8">
               Explore our portfolio of video editing and motion graphics work
             </p>
           </div>
         </div>
       </section>
-
-
 
       {/* Featured Project */}
       <section className="py-20 bg-black">
@@ -81,62 +81,34 @@ const Projects = () => {
           {/* first project */}
           <div className="bg-gray-800 rounded-lg shadow-lg overflow-hidden mt-8">
             <div className="grid grid-cols-1 lg:grid-cols-2">
-
-              <div className="relative z-20">
-                <div className="h-[250px] sm:h-[350px] md:h-[450px] lg:h-[500px] w-full bg-black/50 rounded-xl overflow-hidden border border-gray-800 shadow-2xl">
-                  <video
-                    autoPlay
-                    muted
-                    loop
-                    playsInline
-                    className="w-full h-full object-contain"
-                    preload="auto"
-                  >
-                    <source
-                      src="Coffee Animation.mp4"
-                      type="video/mp4"
-                    />
-                  </video>
-                </div>
-              </div>
-
-              <div className="p-10 lg:p-10">
-                <span className="text-motion-red text-sm font-medium tracking-wider uppercase">
-                  Motion Graphics
-                </span>
-                <h3 className="text-2xl font-bold mt-2 mb-4">
-                  Coffee Commerical Advertisement
-                </h3>
-                <p className="text-white pt-5  mb-6">
-                  We created a dynamic animated commercial for a leading 
-                  company's new product launch. The animation featured sleek 3D
-                  product visualizations, engaging motion graphics, and a
-                  compelling narrative structure that highlighted the product's
-                  key features.
-                </p>
-              </div>
-            </div>
-          </div>
-
-
-          {/* second project */}
-          <div className="bg-gray-800 rounded-lg shadow-lg overflow-hidden mt-8">
-            <div className="grid grid-cols-1 lg:grid-cols-2">
-              <div className="p-10 lg:p-10">
+              <div className="p-10 lg:p-10 flex flex-col justify-between">
                 <span className="text-motion-red text-sm font-medium tracking-wider uppercase">
                   Video Editing
                 </span>
                 <h3 className="text-2xl font-bold mt-2 mb-4">
-                  Commercial Advertisement
+                  Project for African Bank Development Group
                 </h3>
-                <p className="text-white pt-5 mb-6">
-                At AnImagine as we share what drives our passion for storytelling through video. In this candid interview, our editors and creatives talk about their process, the power of visual communication, and why great editing is more than just cutting clips—it's about creating connection. Get to know the people behind the pixels and see how we bring imagination to life, one frame at a time.
+                <p className="text-white pt-5 mb-6 text-justify">
+                  For this project, our team was tasked with creating a
+                  compelling and visually engaging video for the African
+                  Development Bank’s (AFDB) programme presentation. Leveraging
+                  the power of motion graphics, we transformed key data and
+                  messaging into a dynamic visual story that captures attention
+                  and enhances comprehension. Using a clean, modern design, we
+                  blended animated text, icons, and visual metaphors to
+                  illustrate complex concepts in a clear and engaging way.
+                  Strategic use of transitions, color schemes, and pacing
+                  ensured the message remained impactful while maintaining
+                  viewer interest throughout the video. From concept development
+                  to final delivery, this video exemplifies our ability to
+                  distill critical information into a visually cohesive
+                  narrative—perfect for conferences, internal communications,
+                  and digital distribution.
                 </p>
-                
               </div>
 
-              <div className="relative z-20">
-                <div className="h-[250px] sm:h-[350px] md:h-[450px] lg:h-[500px] w-full bg-black/50 rounded-xl overflow-hidden border border-gray-800 shadow-2xl">
+              <div className="relative z-20 flex items-stretch">
+                <div className="h-full w-full bg-black/50 rounded-xl overflow-hidden border border-gray-800 shadow-2xl">
                   <video
                     autoPlay
                     // muted
@@ -145,12 +117,43 @@ const Projects = () => {
                     className="w-full h-full object-contain"
                     preload="auto"
                   >
-                    <source
-                      src="Talkinghead Interview.mp4"
-                      type="video/mp4"
-                    />
+                    <source src="AFDB Programme.mp4" type="video/mp4" />
                   </video>
                 </div>
+              </div>
+            </div>
+          </div>
+
+
+
+          {/* second project */}
+          <div className="bg-gray-800 rounded-lg shadow-lg overflow-hidden mt-8">
+            <div className="grid grid-cols-1 lg:grid-cols-2">
+              <div className="relative z-20">
+                <div className="h-full w-full bg-black/50 rounded-xl overflow-hidden border border-gray-800 shadow-2xl">
+                  <video
+                    autoPlay
+                    muted
+                    loop
+                    playsInline
+                    className="w-full h-full object-contain"
+                    preload="auto"
+                  >
+                    <source src="Coffee Animation.mp4" type="video/mp4" />
+                  </video>
+                </div>
+              </div>
+
+              <div className="p-10 lg:p-10 flex flex-col justify-between">
+                <span className="text-motion-red text-sm font-medium tracking-wider uppercase">
+                  Motion Graphics
+                </span>
+                <h3 className="text-2xl font-bold mt-2 mb-4">
+                  Coffee Commerical Advertisement
+                </h3>
+                <p className="text-white pt-5  mb-6 text-justify">
+                We created a clean and engaging animated commercial for a leading coffee brand's new product launch. The video featured smooth 3D product visualizations, modern motion graphics, and a clear, well-structured storyline. Our goal was to highlight the product’s key features and create a strong visual impact that connects with the audience. The animation used warm colors, stylish transitions, and subtle sound design to enhance the overall experience. This commercial was optimized for social media, web, and digital platforms, helping the brand effectively promote its product and attract customer attention.
+                </p>
               </div>
             </div>
           </div>

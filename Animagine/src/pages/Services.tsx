@@ -87,7 +87,7 @@ const Services = () => {
                 <Scissors className="text-motion-red" size={32} />
               </div>
               <h2 className="text-3xl md:text-4xl font-bold mb-6 text-white">Video  <span className='text-motion-red'>Editing</span></h2>
-              <p className="text-gray-300 mb-8 leading-relaxed">
+              <p className="text-gray-300 mb-8 leading-relaxed text-justify">
                 Our professional video editing services transform raw footage into compelling, polished visual stories that captivate your audience. Whether you need a commercial, corporate video, social media content, or feature film, our editors craft a seamless narrative with perfect pacing and flow.
               </p>
               <motion.ul
@@ -158,7 +158,7 @@ const Services = () => {
                 <LayoutGrid className="text-motion-red" size={32} />
               </div>
               <h2 className="text-3xl md:text-4xl font-bold mb-6 text-white"> <span className='text-motion-red'>Motion</span> Graphics</h2>
-              <p className="text-gray-300 mb-8 leading-relaxed">
+              <p className="text-gray-300 mb-8 leading-relaxed text-justify">
                 Our motion graphics services bring static content to life with dynamic animations and visual effects. We create engaging, eye-catching graphics that enhance your messaging and help your brand stand out in a crowded digital landscape.
               </p>
               <motion.ul
@@ -202,7 +202,7 @@ const Services = () => {
                 <Box className="text-motion-yellow" size={32} />
               </div>
               <h2 className="text-3xl md:text-4xl font-bold mb-6 text-white">Graphics  <span className='text-motion-red'>Desgin</span></h2>
-              <p className="text-gray-300 mb-8 leading-relaxed">
+              <p className="text-gray-300 mb-8 leading-relaxed text-justify">
               Transform your brand with professional graphic design solutions. We craft compelling visual identities through logo design, branding packages, and marketing collateral. Our services include social media graphics, infographics, print materials, packaging design, and typography solutions. Utilizing Adobe Creative Suite and modern design trends, we create eye-catching visuals that resonate with your audience. From custom illustrations to digital assets, we ensure cross-platform consistency and brand alignment. Elevate your visual storytelling with UI/UX design, iconography, and motion graphics integration. Whether refreshing existing materials or building from scratch, our strategic designs boost engagement and brand recognition. Collaborate with us for innovative, results-driven creative solutions that drive business growth.
               </p>
               <motion.ul
@@ -301,7 +301,7 @@ const Services = () => {
               <motion.div 
                 key={index} 
                 variants={fadeInUp} 
-                className="group relative overflow-hidden rounded-[16px] p-[1px] transition-all duration-300 ease-in-out hover:bg-gradient-to-r hover:from-indigo-500 hover:via-purple-500 hover:to-pink-500"
+                className="group relative overflow-hidden rounded-[16px] p-[1px] transition-all duration-300 ease-in-out hover:bg-gradient-to-r hover:from-indigo-500 hover:via-purple-500 hover:to-pink-500 "
               >
 
                  {/* Shiny Swipe Layer */}

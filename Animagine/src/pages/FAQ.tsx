@@ -70,7 +70,7 @@ const FAQ = () => {
       <section className="py-20">
         <div className="container mx-auto px-4">
           <div className="max-w-3xl mx-auto">
-            <div className="mb-12">
+            <div className="mb-12 text-justify">
               {faqItems.map((item, index) => (
                 <FAQItem 
                   key={index}
@@ -109,7 +109,7 @@ const FAQ = () => {
           
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-3xl mx-auto">
             <div className="bg-white p-6 rounded-lg shadow-md text-center">
-              <h3 className="text-xl font-semibold mb-4">Our Services</h3>
+              <h3 className="text-xl font-semibold mb-4 text-red-700">Our Services</h3>
               <p className="text-gray-700 mb-6">
                 Explore our full range of video editing and motion graphics services.
               </p>
@@ -122,7 +122,7 @@ const FAQ = () => {
             </div>
             
             <div className="bg-white p-6 rounded-lg shadow-md text-center">
-              <h3 className="text-xl font-semibold mb-4">Project Portfolio</h3>
+              <h3 className="text-xl font-semibold mb-4 text-red-700">Project Portfolio</h3>
               <p className="text-gray-700 mb-6">
                 Browse our portfolio of successful client projects.
               </p>
@@ -135,7 +135,7 @@ const FAQ = () => {
             </div>
             
             <div className="bg-white p-6 rounded-lg shadow-md text-center">
-              <h3 className="text-xl font-semibold mb-4">Contact Us</h3>
+              <h3 className="text-xl font-semibold mb-4 text-red-700">Contact Us</h3>
               <p className="text-gray-700 mb-6">
                 Ready to start your project? Get in touch with our team today.
               </p>
